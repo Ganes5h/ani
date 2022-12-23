@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        table tr td{
+            text-align: left;
+        }
+        table tr td:hover{
+            color: blue;
+        }
+        /* img{ */
+            /* float: right; */
+            /* position: relative; */
+            /* bot/tom: 500px; */
+            /* right:300px; */
+        /* } */
+        .m{
+            width: 600px;
+        }
+        .n{
+            height: 500px;
+            align-items: center;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="m">
+    <legend><fieldset>
+    <!-- Creating Simple form to demostrate all input tags of HTML -->
+    <form action="backend.php">
+        <table cellspacing="20px">
+        
+        <tr>
+            <td><lable>Name:</lable></td>
+            <td><input type="text" placeholder="Enter your name "><br></td>
+        </tr>
+        <tr>
+            <td><lable>Email  :</lable></td>
+            <td><input type="email" placeholder="Enter your E-mail"><br></td>
+        </tr>
+
+        <tr>
+            <td><lable>Enter password :</lable></td>
+            <td><input type="password" placeholder="Enter your password"><br></td>
+        </tr>
+
+        <tr>
+            <td><lable>Select DOB :</lable></td>
+            <td><input type="date"><br></td>
+        </tr>
+
+        <tr>
+            <td><label>Select Age:</label></td>
+            <td>
+            <select>
+                <option >20</option>
+                <option >19</option>
+                <option >18</option>
+                <option >17</option>
+                <option >16</option>
+                <option >15</option>
+            </select><br></td>
+        </tr>
+
+        <tr>
+                <td><label for="id">Select Gender :</label></td>
+                <td><input type="radio" class="id" name="a">
+                <lable>Male</lable>
+                <input type="radio" class="id" name="a" >
+                <label>Female</label><br></td>
+        </tr>
+        
+        <tr>
+            <td><label>Enter Mobile No. :</label></td>
+            <td><input type="tel" placeholder="Enter your Mobile"><br></td>
+        </tr>
+
+        <tr>
+            <td><lable>Address :</lable></td>
+            <td><textarea cols="15" rows="01" placeholder="Enter address"></textarea><br><br></td>
+        </tr>
+
+        <tr>
+            <td> <Label>Select Branch</Label></td>
+            <td><select>
+                <option aria-placeholder="Branch">CSE</option>
+                <option aria-placeholder="Branch">ISE</option>
+                <option aria-placeholder="Branch">ECE</option>
+                <option aria-placeholder="Branch">EEE</option>
+                <option aria-placeholder="Branch">AE</option>
+            </select><br></td>
+        </tr>
+
+        <tr>
+            <td><label>Upload  Fee Reciept:</label></td>
+            <td><input type="file" placeholder="Upload your fee Reciept here " ><br></td>
+        </tr>
+        
+        <tr>
+            <td><lable>Are you sure ,you want to Submit ? </lable></td>
+            <td><input type="checkbox"><br><br></td>
+        </tr>
+        
+        <tr>
+            <td><button type="submit" value="Submit">Submit</button></td>
+
+            <td><button type="reset">Reset</button></td>
+        </tr>
+
+    </table>
+</form>
+
+</fieldset></legend></div>
+<div class="n">
+<h1>Ganesh Programmer</h1>
+<img src="Ganesh.png" alt="no photo " width="400px">
+</div>
+</body>
+</html>
